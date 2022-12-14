@@ -23,20 +23,20 @@ contract Register {
     }
 
     function registerFirstBuyer(string memory studentNum) public payable {
-        require(msg.value > minimumHalfContribution);
+        require(msg.value >= minimumHalfContribution);
         require(!firstBuyers[studentNum] == true);
         firstBuyers[studentNum] = true;
     }
 
     function registerSecondBuyer(string memory studentNum) public payable {
-        require(msg.value > minimumHalfContribution);
+        require(msg.value >= minimumHalfContribution);
         require(!firstBuyers[studentNum] == true);
         require(!secondBuyers[studentNum] == true);
         secondBuyers[studentNum] = true;
     }
 
     function registerAllBuyer(string memory studentNum) public payable {
-        require(msg.value > minimumAllContribution);
+        require(msg.value >= minimumAllContribution);
         require(!firstBuyers[studentNum] == true);
         require(!secondBuyers[studentNum] == true);
         firstBuyers[studentNum] = true;

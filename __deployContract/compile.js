@@ -24,11 +24,11 @@ var input = {
 var output = JSON.parse(solc.compile(JSON.stringify(input)));
 
 const evm = output.contracts['contract.sol']['Register'].evm;
-const abi = output.contracts['contract.sol']['Register'].abi;
 
-module.exports = [abi, evm];
+console.log(String(output.contracts['contract.sol']['Register'].abi));
 
-console.log(JSON.stringify(abi));
+// module.exports = [abi, evm];
+
 
 // `output` here contains the JSON output as specified in the documentation
 // for (var contractName in output.contracts['contract.sol']) {

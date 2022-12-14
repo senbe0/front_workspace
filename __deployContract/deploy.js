@@ -4,7 +4,7 @@ const [ abi, evm ] = require('./compile');
 
 const provider = new HDWalletProvider(
     '*****', // MNEMONIC
-    'h****'  // INFURA_URL
+    '****'  // INFURA_URL
 
 );
 

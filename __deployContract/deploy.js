@@ -3,16 +3,15 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const [ abi, evm ] = require('./compile');
 
 const provider = new HDWalletProvider(
-    '*****', // MNEMONIC
-    '****'  // INFURA_URL
-
+    'nation indicate wear voyage amused bottom scrub core crawl helmet symbol give', // MNEMONIC
+    'https://goerli.infura.io/v3/8047174da13845108932a83863173c63'  // INFURA_URL
 );
 
 const web3 = new  Web3(provider);
 
 const deploy = async() => {
     const accounts = await web3.eth.getAccounts();
-
+    
     console.log(`deploying from ${accounts[0]} ..... Please wait a second ...`);
 
     const result = await new web3.eth.Contract(abi)

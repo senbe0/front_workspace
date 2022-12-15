@@ -8,6 +8,44 @@
 </head>
 <body>
     <div id="root"></div>
+    <div id="dummy">
+        <div><strong>※Error: MetaMaskがインストールされていない為、アプリケーションは実行出来ません。<br>MetaMaskをダウンロードしてください。</strong></div>
+        <h2>定期乗車券を購入する</h2>
+        <p>１．購入する期間を選択してください</p>
+        <br/>
+
+        <div>
+            <label><input type="radio" name="options" value="first" /> 前期: 4月～9月   (価格: 0.003 eth)</label>
+            <br/>
+            <label><input type="radio" name="options" value="second" /> 後期:10月～3月  (価格: 0.003 eth)</label>
+            <br/>
+            <label><input type="radio" name="options" value="all" /> 1年間:4月～3月  (価格: 0.006 eth)</label>
+        </div>
+        
+        <p>２．学籍番号を<strong>半角英数字</strong>で入力してください。
+        <br/>
+        ※空白を入れないでください。
+        <br/>
+        <input/>
+        </p>
+        <p>３．パスワードを<strong>半角英数字</strong>で入力してください<strong>(任意)</strong>
+        <br/>
+        <strong>※小文字と大文字は区別されます。</strong>
+        <br/>
+        ※空白を入れないでください。
+        <br/>
+        ※パスワードを設定しない場合は空欄で購入ボタンを押してください。
+        <br/>
+        ※パスワードを入力した場合のみ、購入状況が秘匿されます。
+        <br/>
+        <input/>
+        </p>
+        <button >購入</button>
+        <br/>
+        <br/>
+        <br/>
+        
+    </div>
     <script src="bundle.js"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const [ abi, evm ] = require('./compile');
 
 const provider = new HDWalletProvider(
-    'nation indicate wear voyage amused bottom scrub core crawl helmet symbol give', // MNEMONIC
-    'https://goerli.infura.io/v3/8047174da13845108932a83863173c63'  // INFURA_URL
+    '***', // MNEMONIC
+    '***'  // INFURA_URL
 );
 
 const web3 = new  Web3(provider);

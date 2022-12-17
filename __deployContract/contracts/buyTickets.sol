@@ -13,8 +13,8 @@ contract Register {
         _;
     }
 
-    constructor (address payable creator, uint price) {
-        manager = creator;
+    constructor (address creator, uint price) {
+        manager = payable(creator);
         minimumPrice = price;
     }
 

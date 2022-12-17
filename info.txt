@@ -1,5 +1,21 @@
 note:
-new version
+BuyTickets.sol
+
+Contract deployed to 0xD45f7Db3dDEb41fF9c039fa3520c390CefD79dB0
+
+
+[{"inputs":[{"internalType":"address payable","name":"creator","type":"address"},{"internalType":"uint256","name":"price","type":"uint256"}],"stateMutability":"nonpayable","type":"constructor","signature":"constructor"},{"inputs":[{"internalType":"string","name":"studentHash","type":"string"}],"name":"isbuyer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x3a7e7426"},{"inputs":[],"name":"manager","outputs":[{"internalType":"address payable","name":"","type":"address"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x481c6a75"},{"inputs":[],"name":"minimumPrice","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function","constant":true,"signature":"0x7f386b6c"},{"inputs":[{"internalType":"string","name":"studentHash","type":"string"}],"name":"registerBuyer","outputs":[],"stateMutability":"payable","type":"function","payable":true,"signature":"0x0c6a27bc"},{"inputs":[],"name":"sendAllEtherToManager","outputs":[],"stateMutability":"nonpayable","type":"function","signature":"0x183adf2e"}]
+
+
+
+
+
+
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+contract.sol
 
 Contract deployed to 0x7741c7B0AEE4a0cffAa49D4E71FD06DA2f7aA5f4
 

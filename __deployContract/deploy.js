@@ -3,8 +3,8 @@ const HDWalletProvider = require('@truffle/hdwallet-provider');
 const [ abi, evm ] = require('./compile');
 
 const provider = new HDWalletProvider(
-    '***', // MNEMONIC
-    '***'  // INFURA_URL
+    '', // MNEMONIC
+    ''  // URL
 );
 
 const web3 = new  Web3(provider);
@@ -17,10 +17,9 @@ const deploy = async() => {
     const result = await new web3.eth.Contract(abi)
         .deploy({ 
             data: evm.bytecode.object,
-            arguments: [ 
+            arguments: [
                 '0xa429E08B646AaA994e2eb0aF68C96C6A6fb16fD3',
                 3000000000000000,
-                6000000000000000
             ]
         })
         .send({ gas: '1000000', from: accounts[0] });

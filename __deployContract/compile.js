@@ -2,13 +2,13 @@ const solc = require('solc');
 const fs = require('fs');
 const path = require('path');
 
-const filepath = path.resolve(__dirname, 'contracts', 'contract.sol');
+const filepath = path.resolve(__dirname, 'contracts', 'buyTickets.sol');
 const source = fs.readFileSync(filepath, 'utf-8');
 
 var input = {
   language: 'Solidity',
   sources: {
-    'contract.sol': {
+    'buyTickets.sol': {
       content: source
     }
   },
@@ -23,8 +23,8 @@ var input = {
 
 var output = JSON.parse(solc.compile(JSON.stringify(input)));
 
-const evm = output.contracts['contract.sol']['Register'].evm;
-const abi = output.contracts['contract.sol']['Register'].abi;
+const evm = output.contracts['buyTickets.sol']['Register'].evm;
+const abi = output.contracts['buyTickets.sol']['Register'].abi;
 
 module.exports = [abi, evm];
 
